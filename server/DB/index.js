@@ -6,5 +6,5 @@ mongoose.connect(process.env.CONNECTION_STRING,
         useUnifiedTopology: true
     })
     .then(() => { console.log("connection succeed.."); })
-    .catch((err) => { console.error("connection falid", err.massage); })
+    .catch((err) => { console.error("connection falid", err); })
 module.exports = mongoose.connection;
